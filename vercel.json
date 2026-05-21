@@ -1,0 +1,5 @@
+{
+  "buildCommand": "true",
+  "installCommand": "true",
+  "outputDirectory": "Kimi_Agent_Deployment_v13"
+}
