@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*
+   * Tokens de shadcn/ui expresados con la paleta de la marca, no con los
+   * grises por defecto: así cualquier componente de shadcn que se añada
+   * hereda los colores del sitio en lugar de introducir otros.
+   */
+  :root {
+    --background: 0 0% 100%; /* #ffffff */
+    --foreground: 0 0% 20%; /* #333333  = dark      */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    --primary: 32.8 93.2% 54.1%; /* #f7941d  = orange    */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%; /* #f5f5f5  = gray-bg   */
+    --secondary-foreground: 0 0% 20%;
+
+    --muted: 0 0% 96%; /* #f5f5f5  = gray-bg   */
+    --muted-foreground: 0 0% 40%; /* #666666  = gray-text */
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 20%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 93.3%; /* #eeeeee  = gray-border */
+    --input: 0 0% 93.3%;
+    --ring: 32.8 93.2% 54.1%; /* #f7941d  = orange      */
+
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-gray-text antialiased;
+  }
+}
